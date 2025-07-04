@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIDMERGE - Download</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #181824;
+      color: #e0e0e0;
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      padding: 40px 0 10px 0;
+      text-align: center;
+    }
+    .logo-img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      border-radius: 18px;
+      box-shadow: 0 2px 12px 0 rgba(124, 58, 237, 0.10);
+      background: #232136;
+      display: inline-block;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #a78bfa;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      color: #b0b0b0;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .download-card {
+      background: #232136;
+      border-radius: 18px;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 32px 28px 28px 28px;
+      box-shadow: 0 8px 32px 0 rgba(60, 20, 120, 0.15);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .download-btn {
+      background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%);
+      color: #fff;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      padding: 16px 40px;
+      margin: 20px 0 10px 0;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 2px 8px 0 rgba(124, 58, 237, 0.10);
+      text-decoration: none;
+      display: inline-block;
+    }
+    .download-btn:hover {
+      background: linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%);
+      transform: translateY(-2px) scale(1.03);
+    }
+    .info {
+      color: #b0b0b0;
+      font-size: 0.98rem;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .screenshot-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 38px 0 0 0;
+    }
+    .screenshot-title {
+      color: #a78bfa;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .screenshot-img {
+      max-width: 90vw;
+      max-height: 340px;
+      border-radius: 12px;
+      box-shadow: 0 4px 32px 0 rgba(60, 20, 120, 0.18);
+      border: 2px solid #232136;
+      background: #232136;
+      object-fit: contain;
+    }
+    .features {
+      margin: 40px auto 0 auto;
+      max-width: 600px;
+      padding: 0 20px;
+    }
+    .features h2 {
+      color: #a78bfa;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #e0e0e0;
+    }
+    .features li {
+      margin-bottom: 10px;
+      padding-left: 18px;
+      position: relative;
+    }
+    .features li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      background: linear-gradient(90deg, #7c3aed 0%, #a78bfa 100%);
+      border-radius: 50%;
+    }
+    footer {
+      margin-top: auto;
+      padding: 30px 0 10px 0;
+      text-align: center;
+      color: #6c6c7a;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 600px) {
+      .download-card {
+        max-width: 95vw;
+        padding: 18px 8px 18px 8px;
+      }
+      .features {
+        padding: 0 8px;
+      }
+      .screenshot-img {
+        max-width: 98vw;
+        max-height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="icon.png" alt="Logo VIDMERGE" class="logo-img">
+    <div class="logo">ClipTV</div>
+    <div class="subtitle">Fundir videos nunca foi tão fácil!</div>
+  </header>
+  <main>
+    <div class="download-card">
+      <div class="info">Versão Windows 7/8/10/11 • 64 bits</div>
+      <a class="download-btn" href="ClipTV.exe" download>
+        Baixar agora
+      </a>
+      <div class="info">Arquivo seguro, sem anúncios</div>
+    </div>
+    <div class="screenshot-section">
+      <div class="screenshot-title">Veja como é o ClipTV:</div>
+      <img src="screenshot.png" alt="Print do VIDMERGE" class="screenshot-img">
+    </div>
+    <section class="features">
+      <h2>Principais recursos</h2>
+      <ul>
+        <li>Junte, corte e exporte vídeos facilmente</li>
+        <li>Fade in/out, velocidade, intervalos e mais</li>
+        <li>Interface escura, moderna e intuitiva</li>
+        <li>Compatível com múltiplos formatos</li>
+        <li>Executável leve, sem instalação</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 ClipTV. por Jeff Kevyn.
+  </footer>
+</body>
+</html>
